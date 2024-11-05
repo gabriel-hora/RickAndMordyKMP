@@ -20,6 +20,7 @@ class HomeViewModel : ViewModel() {
 
     private var requestJob: Job = Job()
 
+
     fun getCharacters() {
         viewModelScope.launchWithState(
             job = requestJob,
